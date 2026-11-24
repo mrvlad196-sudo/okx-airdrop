@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OKX | SOL Airdrop</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #090b0e;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.container {
+  width: 100%;
+  max-width: 430px;
+  background: #14171c;
+  border: 1px solid #292e35;
+  border-radius: 20px;
+  padding: 28px;
+  text-align: center;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+.logo span { color: #00d492; }
+.tag {
+  color: #00d492;
+  font-size: 11px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+}
+h1 { font-size: 27px; margin: 22px 0 10px; }
+.sub { color: #9299a3; font-size: 14px; line-height: 1.6; }
+.amount {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 25px 0 5px;
+}
+.amount span { color: #00d492; }
+.reward { color: #9299a3; font-size: 12px; }
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 28px;
+  background: #00d492;
+  color: #06130e;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { background: #00bd82; }
+#result {
+  display: none;
+  margin-top: 24px;
+  padding: 20px;
+  background: #20252c;
+  border-radius: 12px;
+  line-height: 1.7;
+}
+.demo {
+  margin-top: 22px;
+  font-size: 11px;
+  color: #777f89;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">OK<span>X</span></div>
+  <div class="tag">SOLANA AIRDROP · PARODY</div>
+
+  <h1>Тебе начислен SOL!</h1>
+  <p class="sub">
+    Специальная шуточная акция.
+    Проверь свою воображаемую награду.
+  </p>
+
+  <div class="amount"><span>◎</span> 25.00 SOL</div>
+  <div class="reward">Демонстрационная награда</div>
+
+  <button onclick="reveal()">Проверить награду</button>
+
+  <div id="result">
+    <div style="font-size:35px">😂</div>
+    <h2>ПОПАЛСЯ!</h2>
+    Это был пранк от друга.
+    <br>
+    Твой кошелёк в безопасности ❤️
+  </div>
+
+  <div class="demo">
+    НЕОФИЦИАЛЬНЫЙ ПАРОДИЙНЫЙ САЙТ.
+    Не связан с OKX. Кошелёк не подключается.
+  </div>
+</div>
+
+<script>
+function reveal() {
+  document.getElementById("result").style.display = "block";
+}
+</script>
+</body>
+</html>
